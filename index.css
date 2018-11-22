@@ -1,0 +1,294 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body section {
+  border: 1px solid #9494AD;
+  width: 50%;
+  height: 700px;
+}
+
+body section .ball {
+  border-radius: 50%;
+  background: #13E07A;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 68%;
+  left: 45%;
+  -webkit-animation: ball 4s ease-out normal;
+          animation: ball 4s ease-out normal;
+  z-index: 20;
+}
+
+body section .shadow {
+  background: #949494;
+  border-radius: 50px/10px;
+  width: 30px;
+  height: 5px;
+  margin-left: 45px;
+  position: relative;
+  top: 68%;
+  left: 43%;
+  z-index: 10;
+  -webkit-animation: shadow 4s ease-out normal;
+          animation: shadow 4s ease-out normal;
+}
+
+@-webkit-keyframes ball {
+  0% {
+    top: 20%;
+  }
+  10% {
+    top: 68%;
+  }
+  20% {
+    top: 30%;
+  }
+  30% {
+    top: 68%;
+  }
+  40% {
+    top: 40%;
+  }
+  50% {
+    top: 68%;
+  }
+  60% {
+    top: 50%;
+  }
+  70% {
+    top: 68%;
+  }
+  80% {
+    top: 63%;
+  }
+  100% {
+    top: 68%;
+  }
+}
+
+@keyframes ball {
+  0% {
+    top: 20%;
+  }
+  10% {
+    top: 68%;
+  }
+  20% {
+    top: 30%;
+  }
+  30% {
+    top: 68%;
+  }
+  40% {
+    top: 40%;
+  }
+  50% {
+    top: 68%;
+  }
+  60% {
+    top: 50%;
+  }
+  70% {
+    top: 68%;
+  }
+  80% {
+    top: 63%;
+  }
+  100% {
+    top: 68%;
+  }
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    width: 120px;
+    height: 20px;
+  }
+  10% {
+    width: 30px;
+    height: 5px;
+    margin-left: 45px;
+  }
+  20% {
+    width: 105px;
+    height: 18px;
+    margin-left: 5px;
+  }
+  30% {
+    width: 30px;
+    height: 5px;
+    margin-left: 45px;
+  }
+  40% {
+    width: 90px;
+    height: 15px;
+    margin-left: 15px;
+  }
+  50% {
+    width: 30px;
+    height: 5px;
+    margin-left: 45px;
+  }
+  60% {
+    width: 75px;
+    height: 11px;
+    margin-left: 25px;
+  }
+  70% {
+    width: 30px;
+    height: 5px;
+    margin-left: 45px;
+  }
+  80% {
+    width: 60px;
+    height: 8px;
+    margin-left: 35px;
+  }
+  100% {
+    width: 30px;
+    height: 5px;
+    margin-left: 45px;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    width: 120px;
+    height: 20px;
+  }
+  10% {
+    width: 30px;
+    height: 5px;
+    margin-left: 45px;
+  }
+  20% {
+    width: 105px;
+    height: 18px;
+    margin-left: 5px;
+  }
+  30% {
+    width: 30px;
+    height: 5px;
+    margin-left: 45px;
+  }
+  40% {
+    width: 90px;
+    height: 15px;
+    margin-left: 15px;
+  }
+  50% {
+    width: 30px;
+    height: 5px;
+    margin-left: 45px;
+  }
+  60% {
+    width: 75px;
+    height: 11px;
+    margin-left: 25px;
+  }
+  70% {
+    width: 30px;
+    height: 5px;
+    margin-left: 45px;
+  }
+  80% {
+    width: 60px;
+    height: 8px;
+    margin-left: 35px;
+  }
+  100% {
+    width: 30px;
+    height: 5px;
+    margin-left: 45px;
+  }
+}
+
+body .drop {
+  border-radius: 100% 0 100% 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: #5DDDFF;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  z-index: 30;
+  -webkit-animation: drop 1s ease-in normal infinite;
+          animation: drop 1s ease-in normal infinite;
+}
+
+body .bucket {
+  width: 400px;
+  height: 80px;
+  border-radius: 50%;
+  background: #008FB1;
+  position: relative;
+  top: 70%;
+  left: 20%;
+  z-index: 10;
+}
+
+body .circles {
+  border: 1px solid #5DDDFF;
+  border-radius: 50%;
+  width: 400px;
+  height: 80px;
+  position: relative;
+  top: 58.5%;
+  left: 20%;
+  z-index: 20;
+  -webkit-animation: circles 1s ease-in normal infinite;
+          animation: circles 1s ease-in normal infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: 20%;
+  }
+  100% {
+    top: 75%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: 20%;
+  }
+  100% {
+    top: 75%;
+  }
+}
+
+@-webkit-keyframes circles {
+  0% {
+    width: 0;
+    height: 0;
+    margin: 38px 190px;
+  }
+  100% {
+    width: 400px;
+    height: 80px;
+  }
+}
+
+@keyframes circles {
+  0% {
+    width: 0;
+    height: 0;
+    margin: 38px 190px;
+  }
+  100% {
+    width: 400px;
+    height: 80px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
